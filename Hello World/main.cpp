@@ -8,11 +8,21 @@
 
 #include <iostream>
 
+int getNumberFromUser()
+{
+    int num = 0;
+    std::cin >> num;
+    return num;
+}
+
 int main()
 {
-    std::cout << "What's your name?" << std::endl;
-    char name[] = "";
-    std::cin >> name;
-    std::cout << "Hi " << name << ", nice to meet you!" << std::endl;
+    std::cout << "Welcome to the Addor" << std::endl << std::endl;
+    std::cout << "What's your first number?" << std::endl;
+    int first = getNumberFromUser();
+    std::cout << "What's your second number?" << std::endl;
+    int second = getNumberFromUser();
+    std::cout << "Adding..." << std::endl;
+    std::cout << first + second;
     return 0;
 }
