@@ -8,8 +8,11 @@
 
 #include <iostream>
 
-int main() {
-    // insert code here...
-    std::cout << "Hello, World!";
+int main()
+{
+    std::cout << "What's your name?" << std::endl;
+    char name[] = "";
+    std::cin >> name;
+    std::cout << "Hi " << name << ", nice to meet you!" << std::endl;
     return 0;
 }
