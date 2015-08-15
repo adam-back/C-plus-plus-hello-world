@@ -18,9 +18,15 @@ int multiply( int x, int y )
     return x * y;
 }
 
+int doubleNumber( int a )
+{
+    return multiply(a, a);
+}
+
 int main()
 {
-    int product = multiply( 2, 4 );
-    print( product );
+    int num = 0;
+    std::cin >> num;
+    print( doubleNumber(num));
     return 0;
 }
